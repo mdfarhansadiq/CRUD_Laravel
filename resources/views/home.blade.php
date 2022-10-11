@@ -33,11 +33,11 @@
 
                 @foreach ($data as $d)
                 <tr>
-                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $l->iteration }}</td>
                     <td>{{ $d->name}}</td>
                     <td>{{ $d->email}}</td>
                     <td>{{ $d->salary}}</td>
-                    <td><a href="{{url('home_delete', $d['id'])}}">Delete</a></td>
+                    <td><a href="{{url('home_show', $d['id'])}}">Edit</a></td>
                     @endforeach
                 </tr>
             </tbody>

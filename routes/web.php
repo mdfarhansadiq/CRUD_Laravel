@@ -14,6 +14,8 @@ use App\Http\Controllers\HomeController;
 */
 Route::get('/home', [HomeController::class, 'show']);
 Route::post('/home_create', [HomeController::class, 'create']);
+Route::get('/home_show/{id}', [HomeController::class, 'update_show']);
+Route::post('/home_update/{id}', [HomeController::class, 'update']);
 Route::get('/home_delete/{id}', [HomeController::class, 'delete']);
 
 // Route::get('/', function () {
